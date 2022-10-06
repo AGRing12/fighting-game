@@ -1,82 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
-    <!-- full container -->
-    <div 
-    style="
-    position: relative; 
-    display: inline-block;">
-        <!-- health and timer container -->
-        <div 
-        style="
-        position: absolute; 
-        display: flex; 
-        width: 100%;
-        align-items: center;
-        padding: 20px;">
-            <!-- player health -->
-            <div style="position: relative;
-            height: 30px; 
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;">
-            <div
-            
-            style="
-            background-color: yellow; 
-            height: 30px;
-            width: 100%;"></div>
-        
-            <div id="playerhealth" style="position: absolute; background-color: lime; 
-            top: 0; right: 0; bottom: 0; width: 100%;"></div>
-            </div>
-            <!-- timer -->
-            <div 
-            id="timer"
-            style="
-            background-color: red; 
-            height: 100px; 
-            width: 100px; 
-            flex-shrink: 0; display: flex; align-items: center; justify-content: center;">10
-            </div>
-            <!-- enemy health -->
-            <div style="position: relative;
-            height: 30px; 
-            width: 100%;">
-            <div
-            
-            style="
-            background-color: yellow; 
-            height: 30px;"></div>
-        
-            <div id="enemyhealth" style="position: absolute; background-color: lime; top: 0; right: 0; bottom: 0; left: 0;"></div>
-            </div>
-        </div>
-        <div 
-        id="displaytext"
-        style="
-        font-size: xx-large;
-        position: absolute; 
-        color: white;  
-        align-items: center; 
-        justify-content: center;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: none;">Tie</div>
-        <canvas id="fps"></canvas>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: black;">
+    <p style="color: white;">
+      player 1 is color <span style="color: red;">Red </span>
+    </p>
+    <p style="color: white;">
+      player 2 is color <span style="color: blue;">Blue</span>
+    </p>
+    <h1>Controls</h1>
+    <div class="player">
+      <h2>Player 1</h2>
+      <p>A=LEFT</p>
+      <p>D=RIGHT</p>
+      <p>W=JUMP</p>
+      <p>Spacebar=ATTACK</p>
     </div>
-
-
-    <script src="msin.js"></script>
-</body>
+    <div class="player">
+      <h2>Player 2</h2>
+      <p>LeftArrow=LEFT</p>
+      <p>RightArrow=RIGHT</p>
+      <p>UPArrow=JUMP</p>
+      <p>DownArrow=ATTACK</p>
+    </div>
+    <div class="player">
+      <p>Once game is over refresh to play again</p>
+    </div>
+    <a href="game/index.html"> <h3>Start Game</h3></a>
+  </body>
 </html>

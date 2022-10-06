@@ -1,0 +1,9 @@
+* {
+  color: white;
+}
+.player {
+  padding: 5%;
+}
+.player p {
+  display: flex;
+}
